@@ -70,11 +70,10 @@ else echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http:
 		
 		
 		<div id='secondarymenu-container'>
-			<div id="logo">
-				<?php $SMTheme->block_logo();?>
+			<div id="sitetitle">
+                            <?php bloginfo('name'); ?>
 			</div>
-		
-			<div class="menusearch" title="">
+			<div class="menusearch">
 				<?php get_search_form(); ?>
 			</div>
 			
@@ -88,7 +87,11 @@ else echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http:
 		
 		
 		<div id='mainmenu-container'>
+			<div id="logo">
+				<?php $SMTheme->block_logo();?>
+			</div>
 			<div id='mainmenu'>
+		
 				<?php $nav_menu_params=array(
 					'depth'=>0,
 					'theme_location'=>'main-menu',
