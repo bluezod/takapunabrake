@@ -1,0 +1,33 @@
+a.searchmore {
+	margin-top: 0px;
+}
+
+
+#rightcol li.widget_categories div.sidebarbox h2.widgettitle {
+	margin-left: -16px;
+}
+
+input[type=button], input[type=reset], input[type=submit] {
+	cursor: hand;
+}
+#header #headerright #searchboxo form input.submitbutton {
+	cursor: hand;
+}
+
+h2.searchtitle-page, 
+div.postwrap h2.posttitle-page, 
+div.postwrap h2.posttitle {
+	display: block;
+	margin-top: 16px;
+}
+
+div.widget h4,
+div.widget h2,
+#rightcol li.sidebaritem h2.widgettitle {
+	padding-left: 0px;
+}
+
+div#rightcol div.widget h2,
+div#rightcol div.widget h4 {
+	padding-left: 12px;
+}
