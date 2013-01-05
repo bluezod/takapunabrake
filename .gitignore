@@ -1,2 +1,6 @@
 
 .DS_Store
+/nbproject/private/
+/nbproject/private/private.properties
+/nbproject/project.xml
+wp-config.php
