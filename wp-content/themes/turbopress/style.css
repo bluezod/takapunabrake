@@ -165,7 +165,7 @@ background-image: -webkit-gradient(
 	margin:0 10px;
 }
 #sitetitle{
-        float: left;
+        position: absolute;
         font-size: 35px;
         font-weight:700;
         font-family: Gabriola,'楷体',kai;
@@ -332,18 +332,27 @@ background-image: -webkit-gradient(
 
 
 /*	-==========================- TABLET -==========================-  */
+/* commented by Skyler 9th January 2013  begin*/
 @media only screen and (min-width:640px) and (max-width:1023px) {
 	#content-top {
 		margin-top:20px;
 	}
 	#logo {
-		float:left;
-		margin-top:23px;
+		position:absolute;
+                z-index: 999;
+		/*float:left;
+		margin-top:23px;*/
 	}
 	/*------------------------------ MENU ------------------------------*/
 	.menusearch {
-		float:right;
-		/*margin-top:35px;*/
+		/*float:right;
+		margin-top:35px;*/
+	}
+	#mainmenu {
+		height:84px;
+		padding:1px 0;
+		padding-left:350px;
+		background:url(images/menu.png) 50% top no-repeat;
 	}
 	#secondarymenu-container {
 		height:46px;
@@ -365,26 +374,39 @@ background-image: -webkit-gradient(
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
 		border-top:1px solid #e7e7e7;
 		border-bottom:1px solid #c6c6c6;
-		padding-bottom:20px;
+		/*padding-bottom:20px;*/
 	}
 	#mainmenu li {
 		float:left;
 	}
-	#mainmenu a {
+	/*#mainmenu a {
 		color:#161616;
 		text-decoration:none;
 		font-size:15px;
 		text-shadow:0 1px 1px #fff;
 		padding:20px 20px 10px;
 		display:block;
+	}*/
+	#mainmenu li a {
+                padding: 27px 12px;
+                display: inline-block;
+		color:#161616;
+		text-decoration:none;
+                font-weight: normal;
+		font-size:15px;
+		font-family:Comic Sans MS;
 	}
 	#header ul.children li a, .sub-menu li a {
 		color:#161616 !important;
 	}
 }
+/* commented by Skyler 9th January 2013  end*/
 
 /*	-==========================- MOBILE -==========================-  */
 @media only screen and (min-width:240px) and (max-width:639px) {
+        #sitetitle{
+                font-size: 20px;
+        }
 	.menusearch {padding:3px 0;}
 	#secondarymenu-container {
 		padding:0;
