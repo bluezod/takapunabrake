@@ -1,6 +1,11 @@
+#sample of gitignore for Magento
+#ignore Mac files.
+*.DS_Store
+# Use wildcards as well
+#*~
+#*.swp
 
-.DS_Store
-nbproject/private/
-nbproject/private/private.properties
-nbproject/project.xml
-wp-config.php
+# Can also ignore all directories and files in a directory.
+/wp-config.php
+/nbproject/*
+.project
